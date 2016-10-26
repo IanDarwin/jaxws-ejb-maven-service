@@ -1,8 +1,8 @@
 <web-app version="3.0">
 	<!-- USE THIS FOR WILDFLY -->
+	<!-- In Wildfly you simply list the SEI class as a Servlet! -->
 	<servlet>
 		<servlet-name>jaxws_endpoint</servlet-name>
-		<!-- In Wildfly you simply list the SEI class as a Servlet! -->
 		<servlet-class>com.darwinsys.jaxwsdemo.CreditValidate</servlet-class>
 	</servlet>
 
