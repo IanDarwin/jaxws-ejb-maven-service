@@ -7,7 +7,7 @@ Configuration is for JBoss Wildfly; may or may not work on Metro.
 == Usage
 
 ----
-mvn clean compile jaxws:wsgen wildfly:deploy
+mvn clean compile jaxws:wsgen package wildfly:deploy
 ----
 
 On servers other than WildFly, omit the `wildfly:deploy` and deploy the artifact from `jaxws-maven-service-1._n.n_-SNAPSHOT.war` into another EE server.
