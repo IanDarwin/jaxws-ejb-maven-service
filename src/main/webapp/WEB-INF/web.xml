@@ -1,0 +1,14 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>jaxws_endpoint</servlet-name>
+		<!-- In Wildfly you simply list the SEI class as a Servlet! -->
+		<servlet-class>com.darwinsys.jaxwsdemo.CreditValidate</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>jaxws_endpoint</servlet-name>
+		<url-pattern>/CreditValidationService</url-pattern>
+	</servlet-mapping>
+
+</web-app>

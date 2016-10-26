@@ -1,0 +1,13 @@
+= JAX-WS Maven Demo - Service
+
+Demo of a simple service built using the Maven JAX-WS plugin.
+
+Configuration is for JBoss Wildfly; may or may not work on Metro.
+
+== Usage
+
+----
+mvn clean jaxws:wsgen package wildfly:deploy
+----
+
+On servers other than WildFly, omit the `wildfly:deploy` and deploy the artifact from `target/*.war` into another EE server.

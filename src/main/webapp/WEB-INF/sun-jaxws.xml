@@ -1,0 +1,5 @@
+<endpoints >
+<endpoint name="JaxWS Demo Service"
+	url-pattern="/CreditValidationService"
+	implementation="com.darwinsys.jaxwsdemo.CreditCardValidate"/>
+</endpoints>
