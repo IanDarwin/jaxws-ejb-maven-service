@@ -1,11 +1,23 @@
-<web-app>
-
+<web-app version="3.0">
+	<!-- USE THIS FOR WILDFLY -->
 	<servlet>
 		<servlet-name>jaxws_endpoint</servlet-name>
 		<!-- In Wildfly you simply list the SEI class as a Servlet! -->
 		<servlet-class>com.darwinsys.jaxwsdemo.CreditValidate</servlet-class>
 	</servlet>
 
+	<!-- USE THIS FOR GLASSFISHY; it uses extra config file sun-jaxws to resolve -->
+	<!--
+	<listener>
+		<listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
+	</listener>
+	<servlet>
+		<servlet-name>jaxws_endpoint</servlet-name>
+		<servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+	</servlet>
+	-->
+
+	<!-- This can stand for both servers -->
 	<servlet-mapping>
 		<servlet-name>jaxws_endpoint</servlet-name>
 		<url-pattern>/CreditValidationService</url-pattern>
