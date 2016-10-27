@@ -2,12 +2,15 @@
 
 Demo of a simple service built using the Maven JAX-WS plugin.
 
-Configuration is for JBoss Wildfly; may or may not work on Metro.
+Configuration is for JBoss Wildfly by default.
+For servers using Metro implementation of JAX-WS, edit web.xml
+and comment out wildfly part, uncomment Metro part.
 
 == Usage
 
 ----
-mvn clean compile jaxws:wsgen package wildfly:deploy
+mvn clean compile jaxws:wsgen package 
+mvn wildfly:deploy
 ----
 
 On servers other than WildFly, omit the `wildfly:deploy` and deploy the artifact from `jaxws-maven-service-1._n.n_-SNAPSHOT.war` into another EE server.
