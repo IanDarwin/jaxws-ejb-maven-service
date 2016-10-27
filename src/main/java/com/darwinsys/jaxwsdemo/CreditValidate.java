@@ -1,7 +1,12 @@
 package com.darwinsys.jaxwsdemo;
 
+import javax.ejb.Stateless;
 import javax.jws.WebService;
 
+/**
+ * A bean that can be accessed as an EJB or as a SOAP Web Service.
+ */
+@Stateless
 @WebService
 public class CreditValidate {
 
