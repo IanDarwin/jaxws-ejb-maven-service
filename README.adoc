@@ -1,8 +1,9 @@
-= JAX-WS Maven Demo - Service
+= EJB+JAX-WS Maven Demo - Service
 
-Demo of a simple service built using the Maven JAX-WS plugin.
+Demo of a simple EJB+SOAP service built using the Maven JAX-WS plugin.
 
 Configuration is for JBoss Wildfly by default.
+Note that the combined bean doesn't deploy on WildFly 8 or earlier.
 For servers using Metro implementation of JAX-WS, edit web.xml
 and comment out wildfly part, uncomment Metro part.
 
