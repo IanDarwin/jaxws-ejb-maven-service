@@ -7,6 +7,9 @@ Note that the combined bean doesn't deploy on WildFly 8 or earlier.
 For servers using Metro implementation of JAX-WS, edit web.xml
 and comment out wildfly part, uncomment Metro part.
 
+There is no client code for either service mode at the moment.
+Please feel free to create one and submit it!
+
 == Usage
 
 ----
