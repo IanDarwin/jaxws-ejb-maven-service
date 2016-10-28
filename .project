@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>jaxws-maven-service</name>
+	<name>jaxws-ejb-maven-service</name>
 	<comment>No comment</comment>
 	<projects>
 	</projects>
