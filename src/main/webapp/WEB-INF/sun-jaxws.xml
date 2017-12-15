@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/jax-ws/ri/runtime ../../../sun-jaxws.xsd"
     version="2.0">
    
-<endpoint name="JaxWS Maven Demo SOAP Web Service"
+<endpoint name="JaxWS + EJB Maven Demo SOAP Web Service"
 	url-pattern="/CreditValidationService"
 	implementation="com.darwinsys.jaxwsdemo.CreditValidate"/>
 </endpoints>
